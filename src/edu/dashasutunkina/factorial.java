@@ -37,7 +37,7 @@ public class factorial {
         if (number == 1) {
             return result;
         }
-        return factorialRecursion(--number).multiply(BigInteger.valueOf(number));
+        return factorialRecursion(number -1).multiply(BigInteger.valueOf(number));
     }
 
     private static void checkInputForMaximumValueAndThrowExceptionIfHigher(int number) {
